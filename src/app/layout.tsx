@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Layout from "@/components/layout/Layout";
+import FontPreconnect from "@/components/layout/FontPreconnect";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://freebirdtravelers.com"),
@@ -49,6 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans antialiased">
+        <FontPreconnect />
         <Layout>
           {children}
         </Layout>
