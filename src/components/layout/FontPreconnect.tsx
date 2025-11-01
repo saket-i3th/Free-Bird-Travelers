@@ -40,4 +40,3 @@ export default function FontPreconnect() {
   // This component doesn't render anything
   return null;
 }
-

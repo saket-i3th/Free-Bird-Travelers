@@ -4,6 +4,7 @@
   "private": true,
   "description": "Your Personal Travel Companion - Where Dreams Take Flight",
   "scripts": {
+    "predev": "node scripts/ensure-types.js",
     "dev": "next dev",
     "build": "next build",
     "export": "next build",
